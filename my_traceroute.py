@@ -30,7 +30,7 @@ def traceroute(destination, max_hops=30, num_packets=3):
                 if response.haslayer(ICMP) and response[ICMP].type == 3:
                     reached_destination = True
         
-        # Print hop information
+        # print hop information
         ips = [ip for ip, rtt in hop_info if ip != '*']
         if ips:
             print(f" {ttl}  {ips[0]}", end='')
