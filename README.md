@@ -4,7 +4,7 @@ A Python implementation of the `traceroute` network diagnostic tool using Scapy,
 
 ## Overview
 
-This project reverse-engineers and reimplements the Unix `traceroute` utility to discover the network path between a source and destination. It demonstrates understanding of IP and ICMP protocols, particularly TTL manipulation and ICMP message types.
+This project reverse-engineers and reimplements the Unix `traceroute` utility to discover the network path between a source and destination. It involves understanding of IP and ICMP protocols, particularly TTL manipulation and ICMP message types.
 
 ## How It Works
 
@@ -85,15 +85,6 @@ This implementation was developed and tested in a Docker-based network environme
 - **hostA** (10.10.0.4): Source machine
 - **hostB** (10.10.0.5): Test destination on local network
 - **attacker** (10.10.0.13): Additional test machine
-
-## Learning Outcomes
-
-Through this project, I learned:
-- How network diagnostic tools use protocol features creatively
-- The role of TTL in preventing routing loops and enabling path discovery
-- ICMP message types and their purposes
-- Packet crafting and analysis using Scapy
-- Network latency measurement and variability
 
 ## Comparison with Standard Traceroute
 
